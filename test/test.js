@@ -12,11 +12,11 @@ describe("dummy test", function () {
   this.timeout(5000);
   it("create deployment", async function () {
     let data;
-    try {
-      data = await k8sDynamicApi.create(deployObj);
-    } catch (error) {
-      expect(JSON.stringify(error.body)).to.equal("");
-    }
+    // try {
+    data = await k8sDynamicApi.create(deployObj);
+    // } catch (error) {
+    // expect(JSON.stringify(error.body)).to.equal("");
+    // }
 
     expect(data.body.kind).to.equal("Deployment");
 

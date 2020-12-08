@@ -2,7 +2,7 @@ const deploymentYamlString = `apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: httpbin
-  namespace: default
+  namespace: aerfio
 spec:
   replicas: 1
   selector:
